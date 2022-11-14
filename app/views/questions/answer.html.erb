@@ -1,0 +1,18 @@
+<div class="container justify-content-center">
+  <h1>Stupid Coach</h1>
+  <p><%= Time.now.year%>- <%= Time.now.month%> - <%= Time.now.day%> at <%= Time.now.hour%> : <%= Time.now.min%></p>
+
+  <div class="question">
+    <p><%= @question %></p>
+    <p><strong>-You</strong></p>
+  </div>
+
+  <div class="answer">
+    <p><%= @answer %></p>
+    <p><strong>-Your coach</strong></p>
+  </div>
+
+  <div class="badge badge-info">
+    <%= link_to "Ask a new question", ask_path %>
+  </div>
+</div>
